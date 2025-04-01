@@ -1,0 +1,118 @@
+CREATE DATABASE cofetarie;
+
+
+//produsele predefinite
+
+CREATE TABLE produse_predefinite (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nume VARCHAR(255) NOT NULL,
+    descriere TEXT NOT NULL,
+    ingrediente TEXT NOT NULL,
+    pret DECIMAL(10,2) NOT NULL,
+    unitate VARCHAR(50) NOT NULL,
+    imagine VARCHAR(255) NOT NULL
+);
+
+-- Inserare produse din imagine
+INSERT INTO produse_predefinite (nume, descriere, ingrediente, pret, unitate, imagine) VALUES
+('Tort de ciocolată cu inserție de zmeură', 'Tort de ciocolată cu blat pufos și inserție delicioasă de zmeură.', 
+ 'Ciocolată, ouă, unt, făină, zahăr, vanilie, zmeură', 130.00, 'lei/kg', 'tort_ciocolata_zmeura.jpeg'),
+ 
+('Tartă cu lămâie', 'Tartă răcoritoare cu cremă de lămâie și blat fraged.', 
+ 'Lămâie, ouă, unt, făină, zahăr, vanilie, brânză', 100.00, 'lei/kg', 'tarta_lamaie.jpeg'),
+ 
+('Ecler', 'Ecler umplut cu cremă fină de vanilie și glazură de ciocolată.', 
+ 'Ouă, făină, zahăr, frișcă, ciocolată, vanilie', 45.00, 'lei/kg', 'ecler.jpeg'),
+ 
+('Brioșe cu piersici', 'Brioșe pufoase cu bucăți de piersici și vanilie.', 
+ 'Piersici, ouă, unt, făină, zahăr, vanilie', 10.00, 'lei/buc', 'briosa_piersici.jpeg'),
+ 
+('Tort Gender Reveal', 'Tort special pentru dezvăluirea genului bebelușului.', 
+ 'Ciocolată, ouă, unt, zahăr, vanilie, colorant alimentar', 130.00, 'lei/kg', 'tort_gender_reveal.jpeg'),
+ 
+('Kit de degustare torturi', 'Set cu 6 combinații inedite de arome pentru testare.', 
+ '6 combinații de blat, cremă și glazură', 110.00, 'lei/set', 'kit_degustare.jpeg');
+
+
+
+//blaturi
+
+CREATE TABLE blaturi (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nume VARCHAR(255) NOT NULL,
+    descriere TEXT NOT NULL,
+    pret DECIMAL(10,2) NOT NULL,
+    imagine VARCHAR(255) NOT NULL
+);
+
+INSERT INTO blaturi (nume, descriere, pret, imagine) VALUES
+('Ciocolată', 'Blat pufos de ciocolată', 25.00, 'blat_ciocolata.jpeg'),
+('Vanilie', 'Blat aerat de vanilie', 20.00, 'blat_vanilie.jpeg'),
+('Red Velvet', 'Blat roșu catifelat', 28.00, 'blat_red_velvet.jpeg'),
+('Brownie', 'Blat dens cu ciocolată', 30.00, 'blat_brownie.jpeg'),
+('Integral', 'Blat din făină integrală', 22.00, 'blat_integral.jpeg'),
+('Fistic', 'Blat aromat de fistic', 32.00, 'blat_fistic.jpeg'),
+('Morcov', 'Blat cu morcov și nuci', 27.00, 'blat_morcov.jpeg'),
+('Lămâie', 'Blat cu aromă de lămâie', 24.00, 'blat_lamaie.jpeg');
+
+
+//creme
+
+CREATE TABLE creme (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nume VARCHAR(255) NOT NULL,
+    descriere TEXT NOT NULL,
+    pret DECIMAL(10,2) NOT NULL,
+    imagine VARCHAR(255) NOT NULL
+);
+
+INSERT INTO creme (nume, descriere, pret, imagine) VALUES
+('Ciocolată', 'Cremă fină de ciocolată neagră', 15.00, 'crema_ciocolata.jpeg'),
+('Vanilie', 'Cremă delicată de vanilie', 12.00, 'crema_vanilie.jpeg'),
+('Caramel sarat', 'Cremă de caramel sărat', 18.00, 'crema_caramel.jpeg'),
+('Mango', 'Cremă ușoară de mango', 20.00, 'crema_mango.jpeg'),
+('Fructul pasiunii', 'Cremă exotică de fructul pasiunii', 22.00, 'crema_pasiune.jpeg'),
+('Cocos', 'Cremă parfumată cu nucă de cocos', 16.00, 'crema_cocos.jpeg'),
+('Fistic', 'Cremă de fistic cremoasă', 25.00, 'crema_fistic.jpeg'),
+('Cafea', 'Cremă cu aromă intensă de cafea', 17.00, 'crema_cafea.jpeg'),
+('Portocale', 'Cremă răcoritoare de portocale', 19.00, 'crema_portocale.jpeg'),
+('Ananas', 'Cremă exotică de ananas', 21.00, 'crema_ananas.jpeg'),
+('Piersici', 'Cremă dulce de piersici', 20.00, 'crema_piersici.jpeg');
+
+
+//insertii
+
+CREATE TABLE insertii (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nume VARCHAR(255) NOT NULL,
+    descriere TEXT NOT NULL,
+    pret DECIMAL(10,2) NOT NULL,
+    imagine VARCHAR(255) NOT NULL
+);
+
+INSERT INTO insertii (nume, descriere, pret, imagine) VALUES
+
+('Fructe de pădure', 'Insert de fructe proaspete', 18.00, 'insert_fructe.jpeg'),
+('Caramel sărat', 'Strat cremos de caramel sărat', 20.00, 'insert_caramel.jpeg'),
+('Piure de mango', 'Insert cu mango și fructul pasiunii', 22.00, 'insert_mango.jpeg'),
+('Trufe proaspete', 'Insert special cu trufe proaspete', 30.00, 'insert_trufe.jpeg'),
+('Praline crocante', 'Insert de praline de ciocolată', 25.00, 'insert_praline.jpeg'),
+('Mousse de ciocolată', 'Insert cremos de mousse de ciocolată', 23.00, 'insert_mousse.jpeg'),
+('Amaretto', 'Insert cu aromă de lichior Amaretto', 26.00, 'insert_amaretto.jpeg');
+
+//glzuri
+
+CREATE TABLE glazuri (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nume VARCHAR(255) NOT NULL,
+    descriere TEXT NOT NULL,
+    pret DECIMAL(10,2) NOT NULL,
+    imagine VARCHAR(255) NOT NULL
+);
+
+INSERT INTO glazuri (nume, descriere, pret, imagine) VALUES
+('Fondant', 'Glazură netedă din zahăr', 10.00, 'glazura_fondant.jpeg'),
+('Ciocolată', 'Glazură de ciocolată neagră', 12.00, 'glazura_ciocolata.jpeg'),
+('Glazură albă', 'Glazură de ciocolată albă', 14.00, 'glazura_alba.jpeg'),
+('Cremă de brânză', 'Glazură ușoară din cremă de brânză', 15.00, 'glazura_branza.jpeg'),
+('Fructe de pădure', 'Glazură cu piure de fructe de pădure', 18.00, 'glazura_fructe.jpeg');
