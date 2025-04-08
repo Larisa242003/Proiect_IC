@@ -1,0 +1,63 @@
+.add-produs-form {
+    width: 350px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #9b26de !important;
+    border-radius: 8px;
+    background-color:rgb(244, 243, 201) !important; /* Fundal pastel deschis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adaugă umbră subtire pentru efect 3D */
+}
+
+.add-produs-form h2 {
+    text-align: center;
+    color: #4CAF50 !important; /* Titlu verde pastel */
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.add-produs-form .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.add-produs-form .form-group label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #353434 !important; /* Culoare gri deschis pentru text */
+}
+
+.add-produs-form .form-group input {
+    padding: 10px;
+    border: 1px solid #f077ce !important; /* Border subtire și pastel */
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #8f8484 !important; /* Fundal gri deschis pentru input-uri */
+    color: #252424; /* Culoare text în input */
+}
+
+.add-produs-form .form-group input:focus {
+    outline: none;
+    border-color: #4CAF50 !important; /* Border verde pastel când input-ul este activ */
+    background-color: #ffffff !important; /* Fundal alb la focus */
+}
+
+.add-produs-form button {
+    padding: 12px;
+    background-color: #4CAF50 !important; /* Verde pastel pentru buton */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.add-produs-form button:hover {
+    background-color: #45a049 !important; /* Verde mai închis când treci cu mouse-ul peste */
+}
+
+.add-produs-form button:focus {
+    outline: none;
+}
