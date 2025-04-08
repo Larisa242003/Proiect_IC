@@ -1,29 +1,28 @@
 package com.cofetarie.cofetarie.entity;
-
 import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
-@Table(name = "produse")
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-public class Produs {
-    
+
+@Table(name = "glazuri")
+public class Glazura {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Integer id;
 
     private String nume;
-    
+
     @Column(columnDefinition = "TEXT")
-    private String ingrediente;
-    
+    private String descriere;
+
     private Double pret;
-    
-    private String unitate;
-    
+
     private String imagine;
 }
+
