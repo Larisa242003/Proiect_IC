@@ -1,0 +1,183 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff5e1;
+    color: #5a3e2b;
+}
+
+header {
+    background-color: #ffccbc;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #5a3e2b;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px;
+    background-color: #ffe0b2;
+}
+
+.hero img {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+footer {
+    background-color: #ffccbc;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+}
+
+.buton-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.buton-meniu {
+    display: inline-block;
+    background-color: #ffab91;
+    color: #5a3e2b;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.buton-meniu:hover {
+    background-color: #ff7043;
+    transform: scale(1.05);
+}
+
+#meniu {
+    text-align: center;
+}
+
+#meniu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#meniu li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adăugăm o umbră subtilă pentru un efect de adâncire */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#meniu li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Umbră mai puternică la hover */
+}
+
+#meniu img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+h3 {
+    margin-top: 15px;
+    font-size: 1.2em;
+}
+
+p {
+    font-size: 1em;
+    color: #5a3e2b;
+}
+
+strong {
+    font-weight: bold;
+}
+
+#social-media .social-icons img {
+    width: 40px; /* Lățimea dorită pentru iconițele de social media */
+    height: auto; /* Păstrează proporțiile imaginilor */
+    margin: 5px; /* Adaugă puțin spațiu între iconițe */
+}
+
+header, section {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Stiluri comune pentru butoane */
+button {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+  }
+  
+  /* Butonul 'Vezi Produsele' */
+  .button-vezi-produse {
+    background-color: #a0d8f1; /* Culoare pastelată */
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .button-vezi-produse:hover {
+    background-color: #8bc9e7; /* Culoare mai deschisă la hover */
+    transform: scale(1.05);
+  }
+  
+  /* Butonul 'Adaugă un Produs' */
+  .button-adauga-produs {
+    background-color: #f7a9c4; /* Culoare pastelată */
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .button-adauga-produs:hover {
+    background-color: #f18bb1; /* Culoare mai deschisă la hover */
+    transform: scale(1.05);
+  }
+  
