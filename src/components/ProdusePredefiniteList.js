@@ -6,10 +6,9 @@ import './ProdusePredefiniteList.css';
 const ProduseList = () => {
   const [produse, setProduse] = useState([]);
   const [cos, setCos] = useState(() => {
-    // Verifică dacă există produse în localStorage
     const savedCos = localStorage.getItem('cos');
     return savedCos ? JSON.parse(savedCos) : [];
-  }); // Coșul de cumpărături
+  });
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -26,19 +25,22 @@ const ProduseList = () => {
   const adaugaInCos = (produs) => {
     const updatedCos = [...cos, produs];
     setCos(updatedCos);
-    // Salvează coșul actualizat în localStorage
-    console.log("Coș actualizat:", updatedCos); 
     localStorage.setItem('cos', JSON.stringify(updatedCos));
   };
 
   return (
     <div className="produse-container">
       <h2 className="produse-title">Produse cofetărie</h2>
-      
-      {/* Buton pentru a naviga spre comanda finală */}
-      <button className="adauga-btn" onClick={() => navigate('/cos')}>
-        🛒 Vezi coșul ({cos.length})
-      </button>
+
+      <div className="buton-container">
+        <button className="adauga-btn" onClick={() => navigate('/cos')}>
+          🛒 Vezi coșul ({cos.length})
+        </button>
+
+        <button className="personalizeaza-btn" onClick={() => navigate('/personalizeaza')}>
+          🎂 Personalizează tortul dorit
+        </button>
+      </div>
 
       <div className="produse-grid">
         {produse.map((produs) => (

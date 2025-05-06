@@ -1,6 +1,6 @@
-// src/pages/HomePage.jsx
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import Logout from './Logout';  // Importă componenta Logout
 import './HomePage.css'; // Stilurile pe care le ai deja
 
 const HomePage = () => {
@@ -15,6 +15,8 @@ const HomePage = () => {
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
+        {/* Adăugăm butonul de deconectare */}
+        <Logout /> {/* Aici poți adăuga butonul */}
       </header>
       
       <section className="hero">
@@ -23,7 +25,6 @@ const HomePage = () => {
         <img src="/images/cofetarie_deliciu_magic.jpg" alt="Imagine cofetărie" />
         <br />
         <button onClick={() => navigate('/produse')}>Vezi Produsele</button>
-
       </section>
 
       <section id="despre">
@@ -45,7 +46,7 @@ const HomePage = () => {
             <img src="/images/facebook.png" alt="Facebook" />
           </a>
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-            <img src="/images/instagram.jpeg" alt="Instagram" />
+            <img src="/images/instagram.jpg" alt="Instagram" />
           </a>
         </div>
       </section>
@@ -58,3 +59,6 @@ const HomePage = () => {
 };
 
 export default HomePage;
+
+
+

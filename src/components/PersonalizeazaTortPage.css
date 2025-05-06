@@ -1,0 +1,106 @@
+.personalizeaza-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .categorie-section {
+    margin-bottom: 30px;
+  }
+  
+  .categorie-section h3 {
+    margin-bottom: 10px;
+  }
+  
+  .finalizeaza-btn {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .finalizeaza-btn:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+  }
+  
+
+  /* General container styling */
+.personalizeaza-container {
+    background-color: #f7f3f7;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading styles */
+  h2 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #ff6f61;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Section title styling */
+  .categorie-section h3 {
+    color: #ff8fa3;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Category option radio buttons */
+  .categorie-section label {
+    background-color: #ffffff;
+    border: 2px solid #ff8fa3;
+    border-radius: 10px;
+    padding: 10px;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .categorie-section input[type="radio"]:checked + label {
+    background-color: #ff8fa3;
+    color: white;
+  }
+  
+  .categorie-section label:hover {
+    background-color: #ffd1dc;
+    cursor: pointer;
+  }
+  
+  /* Description under the category options */
+  .descriere {
+    font-size: 0.9rem;
+    color: #777;
+    font-style: italic;
+  }
+  
+  /* Button styling */
+  button.adauga-cos-btn {
+    background-color: #ff8fa3;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.adauga-cos-btn:disabled {
+    background-color: #ffb3c1;
+    cursor: not-allowed;
+  }
+  
+  button.adauga-cos-btn:hover {
+    background-color: #ff6f61;
+  }
+  
