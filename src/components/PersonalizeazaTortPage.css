@@ -1,0 +1,117 @@
+.personalizeaza-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+  background-color: #f7f3f7;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Banda colorată pentru titlu */
+.header-bar {
+  background-color: #ff8fa3;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header-bar h2 {
+  margin: 0;
+  color: white;
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Secțiuni categorii */
+.categorie-section {
+  margin-bottom: 30px;
+}
+
+.categorie-section h3 {
+  color: #ff6f61;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Grilă de opțiuni */
+.categorie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+/* Card individual pentru fiecare opțiune */
+.categorie-card {
+  background-color: #ffffff;
+  border: 2px solid #ff8fa3;
+  border-radius: 10px;
+  padding: 15px;
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+
+.categorie-card input[type="radio"] {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  transform: scale(1.3);
+}
+
+.categorie-card input[type="radio"]:checked + label {
+  background-color: #ff8fa3;
+  color: white;
+  border-radius: 8px;
+}
+
+.categorie-card label {
+  display: block;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.categorie-card:hover {
+  background-color: #fff0f5;
+}
+
+/* Descriere */
+.descriere {
+  font-size: 0.9rem;
+  color: #777;
+  font-style: italic;
+  margin-top: 5px;
+}
+
+/* Buton adăugare */
+button.adauga-cos-btn {
+  background-color: #ff8fa3;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+button.adauga-cos-btn:disabled {
+  background-color: #ffccd5;
+  cursor: not-allowed;
+}
+
+button.adauga-cos-btn:hover:not(:disabled) {
+  background-color: #ff6f61;
+}
+
+.optiune-imagine {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  display: block;
+}
